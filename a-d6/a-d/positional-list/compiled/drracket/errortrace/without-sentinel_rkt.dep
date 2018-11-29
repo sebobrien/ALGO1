@@ -1,0 +1,1 @@
+("7.0" ("8d0fb7e8ffba812ec82944cfe562f25c28fd0c31" . "efe66482298dc540b31bdca346d3e28a992eeb95") (collects #"a-d" #"positional-list" #"vectorial.rkt") (collects #"errortrace" #"errortrace-key.rkt") (collects #"r6rs" #"lang" #"reader.rkt") (collects #"r6rs" #"main.rkt") (collects #"r6rs" #"private" #"prelims.rkt") (collects #"rnrs" #"base-6.rkt"))

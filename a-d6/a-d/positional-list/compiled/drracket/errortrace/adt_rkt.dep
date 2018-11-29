@@ -1,0 +1,1 @@
+("7.0" ("72e2f01a5557af365eb727771397c29a222c56fa" . "0f2e031d09a7d77194145df53461e882fa6dc85a") (collects #"a-d" #"positional-list" #"without-sentinel.rkt") (collects #"errortrace" #"errortrace-key.rkt") (collects #"r6rs" #"lang" #"reader.rkt") (collects #"r6rs" #"main.rkt") (collects #"r6rs" #"private" #"prelims.rkt") (collects #"rnrs" #"base-6.rkt"))
