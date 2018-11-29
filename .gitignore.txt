@@ -1,2 +1,2 @@
-compiled
-a-d6
+/compiled
+/a-d6
