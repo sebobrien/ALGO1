@@ -1,0 +1,27 @@
+(define (tel-niet-opeenvolgend l)    
+  (let loop ((i 0) ;O(1) + + loop O(size of l)
+             (current l) ;O(1)
+             (stack (s:new))) ;O(1)
+    (if(null? current) ;O(1)
+        i ;O(1)
+        (if (or (s:empty? stack) (not (equal? (s:top stack) (car current)))) ; if O(1) + or O(1) + s:empty? O(1) + not O(1) + equal? O(1) + s:top O(1) + car O(1)
+               (loop (+ i 1) ;O(1)
+                     (cdr current) ;O(1)
+                     (s:push! stack (car current))) ; s:push O(1) + car O(1)
+               (begin ; Max ( sum of the subexpressions ) = loop 
+                 (s:pop! stack) ;O(1)
+                 (loop (- i 1) ; (-) O(1) + loop O(size of l)
+                     (cdr current) ; O(1)
+                     stack))))))
+					 
+	
+	
+	;Performance: 
+		;All subexpressions in loop without the recursive calls are in O(1) including the procedures belonging to the stack ADT (cursus p133). 
+		;The named let loop calls itself recursivley depending on the size of the list l and is in O(1.n) with 1 being the performance characteristic of the body without the recursive calls and n equal to the size of l.
+		
+		;O(1.n) = O(n) Therefore the worstcase performance of tel-niet-opeenvolgend is in O(n)
+		
+	
+		
+		
